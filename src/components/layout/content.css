@@ -1,0 +1,13 @@
+.Content {
+    display: flex;
+    flex-grow: 1;
+    background-color: #6d6b6b;
+    padding: 30px;
+    width: 100vh;
+}
+
+.Content > * {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
