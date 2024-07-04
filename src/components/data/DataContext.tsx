@@ -9,15 +9,15 @@ export type DataContext = {
 
     data: data;
     saveData: (data: data) => void;
-    // updateData: (id: number) => void;
+    updateData: (id: number, data: data) => void;
 
 }
 
 export const DEFAULT_VALUE = {
 
-        number: 200,
-        text: "aaaa"
-    
+    number: 200,
+    text: "aaaa"
+
 }
 
 const DataContext = React.createContext<DataContext | null>(null);

@@ -27,17 +27,18 @@ function UseEffect(props: any) {
         mod: ""
     })
 
-    useEffect(function () {
-        setNumeros({
-            ...numeros,
-            fatorial: calcFatorial(numeros.numero),
-        })
-    }, [numeros.numero])
+    // useEffect(function () {
+    //     setNumeros({
+    //         ...numeros,
+    //         fatorial: calcFatorial(numeros.numero),
+    //     })
+    // }, [numeros.numero])
 
     useEffect(function () {
         setNumeros({
             ...numeros,
-            mod: numeros.numero % 2 == 0 ? "Par" : "Impar"
+            mod: numeros.numero % 2 == 0 ? "Par" : "Impar",
+            fatorial: calcFatorial(numeros.numero),
         })
     }, [numeros.numero])
 
